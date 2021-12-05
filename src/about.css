@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #000;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    overflow: hidden !important;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+  }
+  
+.container {
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
+   white-space: nowrap;
+  }
+
+  
+.container__item {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  padding: 20vh 5vw !important;
+  box-sizing: border-box;
+}
+
+.container__item:nth-child(2) {
+  color: #000;
+  background: white;
+}
+
+.container__item .container_item-div {
+  width: 100%;
+  position: absolute;
+}
+
+ .container__item nav {
+  position: absolute;  
+  top: 5%;
+  z-index: 2;
+  font-weight: 600;
+}
+
+.container__item nav a{
+  font-size: 18px;
+  color: white;
+  border-bottom: none;
+}
+
+.container__item h1 {
+  font-size: 100px !important;
+  line-height: 1em;
+  margin-bottom: 30px;  
+  font-weight: 600;
+}
+
+.container__item p {
+  font-size: 22px;
+  margin-bottom: 35px;
+  white-space: initial;
+}
+
+.container__item a {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.social-icons a {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.container__item .social-icons {
+  display: block;
+  margin-top: 25px;
+}
+
+.container__item .social-icons svg {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.container__item .container_item-skills {
+    position: relative;
+    width: 80%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -5px;
+}
+
+.container_item-div.container_item-header {
+    width: 70%;
+}
+
+.container_item-div.container_item-footer {
+  width: 55%;
+}
+
+@media (max-width: 1350px) and (min-width: 900px){
+
+  .container__item {
+    width: 75vw;
+ }
+
+  .container__item h1 {
+   font-size: 75px !important;
+  }
+
+  .container__item p {
+    font-size: 21px;
+  }
+
+  .container__item a {
+    font-size: 21px;
+  }
+
+  .container__item {
+    padding-right: 9vw !important;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 550px) {
+
+    .container__item {
+      width: 100vw;
+      padding: 20vh 10vw !important;
+   }
+
+   .container__item nav a {
+     font-size: 18px;
+   }
+
+   .container__item h1 {
+     font-size: 7.5vw !important;
+  }
+
+   .container__item p {
+     font-size: 18px;
+  }
+
+   .container__item a {
+     font-size: 18px;
+  }
+}
+
+@media(max-width: 550px) {
+
+    .container__item {
+       width: 100vw;
+       padding: 20vh 10vw !important;
+    }
+
+    .container__item nav a {
+      font-size: 3.75vw;
+    }
+
+    .container__item h1 {
+      font-size: 7.5vw !important;
+  }
+
+    .container__item p {
+      font-size: 3.75vw;
+  }
+
+    .container__item a {
+      font-size: 3.75vw;
+  }
+}
+
+
